@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Aaron Paulina - Game Developer</title>
+  <!-- CSS only -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <style>
     body {
@@ -25,7 +26,7 @@
           <a class="nav-link" href="#portfolio">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="modal" data-target="#contactModal">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -42,26 +43,71 @@
       <!-- Your About section goes here -->
     </section>
 
-    <section id="portfolio">
-      <!-- Your Portfolio section goes here -->
-    </section>
-  </div>
-
-  <!-- Contact Modal -->
-  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="contactModalLabel">Contact Me</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+    <section id="portfolio" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">My Portfolio</h2>
+    
+        <div class="row">
+          <!-- Game 1 -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="game-1-image.jpg" class="card-img-top" alt="Game 1 image">
+              <div class="card-body">
+                <h5 class="card-title">Game 1</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="game-1-link" class="btn btn-primary" target="_blank">View Game</a>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Game 2 -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="game-2-image.jpg" class="card-img-top" alt="Game 2 image">
+              <div class="card-body">
+                <h5 class="card-title">Game 2</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="game-2-link" class="btn btn-primary" target="_blank">View Game</a>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Game 3 -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="game-3-image.jpg" class="card-img-top" alt="Game 3 image">
+              <div class="card-body">
+                <h5 class="card-title">Game 3</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="game-3-link" class="btn btn-primary" target="_blank">View Game</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="modal-body">
+      </div>
+    </section>
+    
+
+    <section id="contact" class="py-5">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="mb-4">Contact Me</h2>
           <p>Want to get in touch or talk about a project?</p>
           <!-- E-mail -->
           <p><strong>Email: </strong><a href="mailto:aaronpaulina@gmail.com">aaronpaulina@gmail.com</a></p>
           <!-- LinkedIn -->
           <p><strong>LinkedIn: </strong><a href="https://www.linkedin.com/in/aaron-p-39a816157/" target="_blank">Linkedin</a></p>
           <!-- Resume -->
-          <p><strong>
+          <p><strong>Resume: </strong><a href="your-resume-link.pdf" target="_blank">Download my Resume</a></p>
+        </div>
+      </div>
+    </section>
+    
+  </div>
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
