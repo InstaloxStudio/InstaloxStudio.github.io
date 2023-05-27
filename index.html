@@ -85,15 +85,49 @@
           <!-- Game 3 -->
           <div class="col-md-4">
             <div class="card mb-4">
-              <img src="images/title23.png" class="card-img-top" alt="City of Evil">
               <div class="card-body">
                 <h5 class="card-title">City of Evil</h5>
                 <p class="card-text">Open world zombie survival game set in a city in the future where the world is overrun with evil.</p>
-                    <!-- Embed the video here -->
-                    <video width="320" height="240" controls>
-                    <source src="images/cityofevil.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
+    <!-- Carousel -->
+    <div id="videoCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <video width="320" height="240" controls>
+            <source src="images/cityofevil.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <video width="320" height="240" controls>
+            <source src="images/carstuff.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <!-- slide 3 -->
+        <div class="carousel-item">
+          <video width="320" height="240" controls>
+            <source src="images/colorful.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
                 <a href="game-3-link" class="btn btn-primary" target="_blank">View Game</a>
               </div>
             </div>
