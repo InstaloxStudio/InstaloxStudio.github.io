@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <style>
     body {
-      background-color: #0e0303;
       background-attachment: fixed;
       background-position: fill;
       background-repeat: repeat;
@@ -20,6 +19,17 @@
         /* Adding styles for card */
         .card {
       background-color: #0e0303;
+      color: #fff;
+      border-top: 1px #9b0000 solid;
+      border-bottom: 1px #9b0000 solid;
+    }
+
+    #contact {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #0e0303;
+      z-index: 10;
       color: #fff;
       border-top: 1px #9b0000 solid;
       border-bottom: 1px #9b0000 solid;
@@ -177,7 +187,7 @@
     </section>
     
 
-    <section id="contact" class="py-5">
+    <section id="contact" class="py-5 fixed-bottom">
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2 class="mb-4">Contact Me</h2>
