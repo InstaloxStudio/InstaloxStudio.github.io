@@ -16,6 +16,7 @@
 
       background-color: #0f0707;
       color: #fff;
+      padding-top: calc(5rem + 72px);
     }
         /* Adding styles for card */
         .card {
@@ -31,6 +32,10 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
       color: tomato;
       border-bottom: 1px solid rgb(221, 14, 14);
     }
@@ -197,19 +202,16 @@
   <script>
     const banner = document.getElementById('banner');
     const contactSection = document.getElementById('contact');
-  
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          banner.style.position = 'static';
-        } else {
-          banner.style.position = 'sticky';
-        }
-      });
+
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset >= contactSection.offsetTop) {
+        banner.style.position = 'relative';
+      } else {
+        banner.style.position = 'fixed';
+      }
     });
-  
-    observer.observe(contactSection);
-  </script>
+</script>
+
   
 </body>
 </html>
