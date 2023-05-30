@@ -68,7 +68,7 @@
     </div>
   </nav>
 
-  <header class="banner text-white text-center py-5 mb-4">
+  <header class="banner text-white text-center py-5 mb-4" id="banner">
     <div class="container">
       <h1 class="display-4">Projects</h1>
     </div>
@@ -194,5 +194,22 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script>
+    const banner = document.getElementById('banner');
+    const contactSection = document.getElementById('contact');
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          banner.style.position = 'static';
+        } else {
+          banner.style.position = 'sticky';
+        }
+      });
+    });
+  
+    observer.observe(contactSection);
+  </script>
+  
 </body>
 </html>
