@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Aaron Paulina - Game Developer</title>
   <!-- CSS only -->
@@ -16,8 +17,9 @@
       background-color: #000000;
       color: #fff;
     }
-        /* Adding styles for card */
-        .card {
+
+    /* Adding styles for card */
+    .card {
       background-color: #0e0303;
       color: #fff;
       border-top: 1px #9b0000 solid;
@@ -35,7 +37,7 @@
       border-bottom: 1px #9b0000 solid;
     }
 
-    .banner{
+    .banner {
       background-image: url("images/banner3.png");
       background-color: black;
       background-attachment: fixed;
@@ -51,22 +53,40 @@
 
     .btn-primary {
       background-color: rgb(240, 40, 40);
-      border-color: #9b0000;  /* Adding white border to the button */
+      border-color: #9b0000;
+      /* Adding white border to the button */
     }
 
     .custom-navbar {
       background-color: #000000;
       color: #680303;
     }
-    
-    #link { color: #c60101; }
 
+    #link {
+      color: #c60101;
+    }
+
+    .enlarged {
+      position: fixed;
+      z-index: 9999;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 90vw;
+      height: 90vh;
+    }
+
+    .faded {
+      opacity: 0.3;
+    }
   </style>
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
     <a class="navbar-brand" href="#">Aaron Paulina</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -86,13 +106,13 @@
       <h1 class="display-4">Projects</h1>
     </div>
   </header>
-  
+
 
   <div class="container">
     <section id="portfolio" class="py-5">
       <div class="container">
         <h2 class="mb-4"></h2>
-    
+
         <div class="row">
           <!-- Game 1 -->
           <div class="col-md-4">
@@ -100,14 +120,15 @@
               <img src="images/TheGatesTitle.png" class="card-img-top" alt="The Gates">
               <div class="card-body">
                 <h5 class="card-title">The Gates</h5>
-                <p class="card-text">The Gates of hell are beginning to open, and demons are starting to take over. It's up to you to slay the demons
+                <p class="card-text">The Gates of hell are beginning to open, and demons are starting to take over. It's
+                  up to you to slay the demons
                   and close the gates of hell!
                 </p>
                 <a href="https://instalox.itch.io/thegates" class="btn btn-primary" target="_blank">View Game</a>
               </div>
             </div>
           </div>
-    
+
           <!-- Game 2 -->
           <div class="col-md-4">
             <div class="card mb-4">
@@ -115,64 +136,65 @@
               <div class="card-body">
                 <h5 class="card-title">Pirate Plunder Panic</h5>
                 <p class="card-text">Pirate Plunder Panic is a 2D multiplayer game where players
-                   build up their colonies, build ships, and compete against each other to collect treasure and sink
-                    the ships of their opponents. The game allows for colony building and RimWorld style survival.</p>
+                  build up their colonies, build ships, and compete against each other to collect treasure and sink
+                  the ships of their opponents. The game allows for colony building and RimWorld style survival.</p>
                 <a href="game-2-link" class="btn btn-primary" target="_blank">View Game</a>
               </div>
             </div>
           </div>
-    
+
           <!-- Game 3 -->
           <div class="col-md-4">
             <div class="card mb-4">
               <img src="images/cofchaos.png" class="card-img-top" alt="City of Chaos">
               <div class="card-body">
                 <h5 class="card-title">City of Chaos</h5>
-                <p class="card-text">"City of Chaos" catapults you into a futuristic open-world teeming with high-speed action,
-                   dynamic battles, and daunting survival challenges.
-                    Steal cars, join gangs, fight crime, and combat terrifying monsters in a city that never sleeps.
-                     With co-op survival mode, realistic shooting mechanics, and a visceral gore system,
-                      this game promises an unyielding, adrenaline-pumping journey. </p>
-    <!-- Carousel -->
-    <div id="videoCarousel" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
+                <p class="card-text">"City of Chaos" catapults you into a futuristic open-world teeming with high-speed
+                  action,
+                  dynamic battles, and daunting survival challenges.
+                  Steal cars, join gangs, fight crime, and combat terrifying monsters in a city that never sleeps.
+                  With co-op survival mode, realistic shooting mechanics, and a visceral gore system,
+                  this game promises an unyielding, adrenaline-pumping journey. </p>
+                <!-- Carousel -->
+                <div id="videoCarousel" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
 
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <video width="320" height="240" controls>
-            <source src="images/cityofevil.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                      <video width="320" height="240" controls>
+                        <source src="images/cityofevil.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
 
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-          <video width="320" height="240" controls>
-            <source src="images/carstuff.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                      <video width="320" height="240" controls>
+                        <source src="images/carstuff.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
 
-        <!-- slide 3 -->
-        <div class="carousel-item">
-          <video width="320" height="240" controls>
-            <source src="images/colorful.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+                    <!-- slide 3 -->
+                    <div class="carousel-item">
+                      <video width="320" height="240" controls>
+                        <source src="images/colorful.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
 
-        </div>
-      </div>
+                    </div>
+                  </div>
 
-      <!-- Controls -->
-      <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
+                  <!-- Controls -->
+                  <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
                 <a href="game-3-link" class="btn btn-primary" target="_blank">View Game</a>
               </div>
             </div>
@@ -180,7 +202,7 @@
         </div>
       </div>
     </section>
-    
+
 
     <section id="contact" class="py-5">
       <div class="container">
@@ -204,8 +226,8 @@
         </div>
       </div>
     </section>
-    
-    
+
+
   </div>
 
   <!-- JS, Popper.js, and jQuery -->
@@ -213,17 +235,31 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-<!--Script for zooming a card to a larger size-->
-<script>
-  $(document).ready(function(){
-    $(".card").hover(function(){
-      $(this).css("z-index", "10");
-      $(this).css("transform", "scale(1.5)");
-      }, function(){
-      $(this).css("z-index", "1");
-      $(this).css("transform", "scale(1)");
+  <!--Script for zooming a card to a larger size-->
+
+
+  <script>
+    $(document).ready(function () {
+      // When a card is clicked...
+      $(".card").click(function () {
+        // Add a class to enlarge and center the card
+        $(this).addClass("enlarged");
+
+        // Add a class to fade out other cards
+        $(".card").not(this).addClass("faded");
+      });
+
+      // When the user clicks anywhere outside the card...
+      $(document).click(function (event) {
+        // Only proceed if the clicked element is NOT a card
+        if (!$(event.target).closest('.card').length) {
+          // Remove the enlarged and faded classes from all cards
+          $(".card").removeClass("enlarged faded");
+        }
+      });
     });
-  });
   </script>
+
 </body>
+
 </html>
