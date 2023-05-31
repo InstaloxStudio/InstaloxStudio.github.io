@@ -238,30 +238,47 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-  <!--Script for zooming a card to a larger size-->
 
 
-  <script>
-    $(document).ready(function () {
-      // When a card is clicked...
-      $(".card").click(function () {
-        // Add a class to enlarge and center the card
-        $(this).addClass("enlarged");
+<script>
+function enlargeCard(event) {
+  const card = event.currentTarget;
+  const rect = card.getBoundingClientRect();
 
-        // Add a class to fade out other cards
-        $(".card").not(this).addClass("faded");
-      });
+  // Calculate aspect ratio of the card
+  const aspectRatio = rect.width / rect.height;
 
-      // When the user clicks anywhere outside the card...
-      $(document).click(function (event) {
-        // Only proceed if the clicked element is NOT a card
-        if (!$(event.target).closest('.card').length) {
-          // Remove the enlarged and faded classes from all cards
-          $(".card").removeClass("enlarged faded");
-        }
-      });
-    });
-  </script>
+  // Remove .enlarged from any other cards
+  document.querySelectorAll('.card.enlarged').forEach((card) => {
+    card.classList.remove('enlarged');
+  });
+
+  // Add .enlarged to clicked card
+  card.classList.add('enlarged');
+
+  // Calculate and set width and height to maintain aspect ratio and fit the viewport
+  if (window.innerWidth / window.innerHeight < aspectRatio) {
+    // If the viewport's aspect ratio is less than the card's, set height to 80vh and adjust width
+    card.style.height = '80vh';
+    card.style.width = 'auto';
+  } else {
+    // If the viewport's aspect ratio is greater than the card's, set width to 80vw and adjust height
+    card.style.width = '80vw';
+    card.style.height = 'auto';
+  }
+}
+
+document.querySelectorAll('.card').forEach((card) => {
+  card.addEventListener('click', enlargeCard);
+});
+
+// Add event listener for window resize to adjust the size of the enlarged card
+window.addEventListener('resize', () => {
+  const card = document.querySelector('.card.enlarged');
+  if (card) enlargeCard({ currentTarget: card });
+});
+
+</script>
 
 </body>
 
