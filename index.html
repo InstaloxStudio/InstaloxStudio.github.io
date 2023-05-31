@@ -259,11 +259,11 @@ function enlargeCard(event) {
   // Calculate and set width and height to maintain aspect ratio and fit the viewport
   if (window.innerWidth / window.innerHeight < aspectRatio) {
     // If the viewport's aspect ratio is less than the card's, set height to 80vh and adjust width
-    card.style.height = '80vh';
+    card.style.height = '40vh';
     card.style.width = 'auto';
   } else {
     // If the viewport's aspect ratio is greater than the card's, set width to 80vw and adjust height
-    card.style.width = '80vw';
+    card.style.width = '40vw';
     card.style.height = 'auto';
   }
 }
