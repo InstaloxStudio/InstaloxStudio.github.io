@@ -78,7 +78,8 @@
     .modal-content {
         background-color: #000000;
         border-radius: 15px;
-        border: none;
+        border-top: 1px solid #9b0000;
+        border-bottom: 1px solid #9b0000;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     }
     
@@ -94,7 +95,7 @@
     }
     
     .modal-body {
-        color: #555;
+        color: #a70b0b;
         font-size: 1.2em;
     }
     
@@ -105,25 +106,25 @@
     
     .modal-footer .btn-primary {
         color: #fff;
-        background-color: #007bff;
-        border-color: #007bff;
+        background-color: rgb(240, 40, 40);
+        border-color: #9b0000;
     }
     
     .modal-footer .btn-primary:hover {
         color: #fff;
-        background-color: #0069d9;
-        border-color: #0062cc;
+        background-color: #791501;
+        border-color: #cca700;
     }
     
     .close {
-        color: #aaa;
+        color: #d30000;
         text-shadow: none;
         opacity: 0.8;
     }
     
     .close:hover,
     .close:focus {
-        color: #000;
+        color: #ec0a0a;
         text-decoration: none;
         opacity: 0.8;
     }
