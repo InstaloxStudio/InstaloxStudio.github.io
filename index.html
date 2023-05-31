@@ -110,101 +110,79 @@
     </div>
   </header>
 
-
   <div class="container">
     <section id="portfolio" class="py-5">
-      <div class="container">
-        <h2 class="mb-4"></h2>
+        <div class="container">
+            <h2 class="mb-4"></h2>
 
-        <div class="row">
-          <!-- Game 1 -->
-          <div class="col-md-4">
-            <div class="card mb-4">
-              <img src="images/TheGatesTitle.png" class="card-img-top" alt="The Gates">
-              <div class="card-body">
-                <h5 class="card-title">The Gates</h5>
-                <p class="card-text">The Gates of hell are beginning to open, and demons are starting to take over. It's
-                  up to you to slay the demons
-                  and close the gates of hell!
-                </p>
-                <a href="https://instalox.itch.io/thegates" class="btn btn-primary" target="_blank">View Game</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Game 2 -->
-          <div class="col-md-4">
-            <div class="card mb-4">
-              <img src="images/2captains.png" class="card-img-top" alt="Pirate Plunder Panic">
-              <div class="card-body">
-                <h5 class="card-title">Pirate Plunder Panic</h5>
-                <p class="card-text">Pirate Plunder Panic is a 2D multiplayer game where players
-                  build up their colonies, build ships, and compete against each other to collect treasure and sink
-                  the ships of their opponents. The game allows for colony building and RimWorld style survival.</p>
-                <a href="game-2-link" class="btn btn-primary" target="_blank">View Game</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Game 3 -->
-          <div class="col-md-4">
-            <div class="card mb-4">
-              <img src="images/cofchaos.png" class="card-img-top" alt="City of Chaos">
-              <div class="card-body">
-                <h5 class="card-title">City of Chaos</h5>
-                <p class="card-text">"City of Chaos" catapults you into a futuristic open-world teeming with high-speed
-                  action,
-                  dynamic battles, and daunting survival challenges.
-                  Steal cars, join gangs, fight crime, and combat terrifying monsters in a city that never sleeps.
-                  With co-op survival mode, realistic shooting mechanics, and a visceral gore system,
-                  this game promises an unyielding, adrenaline-pumping journey. </p>
-                <!-- Carousel -->
-                <div id="videoCarousel" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-
-                    <!-- Slide 1 -->
-                    <div class="carousel-item active">
-                      <video width="320" height="240" controls>
-                        <source src="images/cityofevil.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
+            <div class="row">
+                <!-- Game 1 -->
+                <div class="col-md-4">
+                    <div class="card mb-4" data-toggle="modal" data-target="#gameModal1">
+                        <img src="images/TheGatesTitle.png" class="card-img-top" alt="The Gates">
+                        <div class="card-body">
+                            <h5 class="card-title">The Gates</h5>
+                            <p class="card-text">The Gates of hell are beginning to open, and demons are starting to take over. It's
+                                up to you to slay the demons and close the gates of hell!
+                            </p>
+                            <a href="https://instalox.itch.io/thegates" class="btn btn-primary" target="_blank">View Game</a>
+                        </div>
                     </div>
-
-                    <!-- Slide 2 -->
-                    <div class="carousel-item">
-                      <video width="320" height="240" controls>
-                        <source src="images/carstuff.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-
-                    <!-- slide 3 -->
-                    <div class="carousel-item">
-                      <video width="320" height="240" controls>
-                        <source src="images/colorful.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-
-                    </div>
-                  </div>
-
-                  <!-- Controls -->
-                  <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
                 </div>
-                <a href="game-3-link" class="btn btn-primary" target="_blank">View Game</a>
-              </div>
+
+                <!-- Game 2 -->
+                <div class="col-md-4">
+                    <div class="card mb-4" data-toggle="modal" data-target="#gameModal2">
+                        <img src="images/2captains.png" class="card-img-top" alt="Pirate Plunder Panic">
+                        <div class="card-body">
+                            <h5 class="card-title">Pirate Plunder Panic</h5>
+                            <p class="card-text">Pirate Plunder Panic is a 2D multiplayer game where players build up their colonies, build ships, and compete against each other to collect treasure and sink the ships of their opponents. The game allows for colony building and RimWorld style survival.</p>
+                            <a href="game-2-link" class="btn btn-primary" target="_blank">View Game</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game 3 -->
+                <div class="col-md-4">
+                    <div class="card mb-4" data-toggle="modal" data-target="#gameModal3">
+                        <img src="images/cofchaos.png" class="card-img-top" alt="City of Chaos">
+                        <div class="card-body">
+                            <h5 class="card-title">City of Chaos</h5>
+                            <p class="card-text">"City of Chaos" catapults you into a futuristic open-world teeming with high-speed action, dynamic battles, and daunting survival challenges. Steal cars, join gangs, fight crime, and combat terrifying monsters in a city that never sleeps. With co-op survival mode, realistic shooting mechanics, and a visceral gore system, this game promises an unyielding, adrenaline-pumping journey. </p>
+                            <a href="game-3-link" class="btn btn-primary" target="_blank">View Game</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
+
+    <!-- Modals -->
+    <div class="modal fade" id="gameModal1" tabindex="-1" role="dialog" aria-labelledby="gameModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+            <div class="modal-content">
+                <!-- Insert Game 1 content here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="gameModal2" tabindex="-1" role="dialog" aria-labelledby="gameModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+            <div class="modal-content">
+                <!-- Insert Game 2 content here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="gameModal3" tabindex="-1" role="dialog" aria-labelledby="gameModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+            <div class="modal-content">
+                <!-- Insert Game 3 content here -->
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
     <section id="contact" class="py-5">
