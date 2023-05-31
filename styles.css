@@ -1,0 +1,130 @@
+    body {
+      background-attachment: fixed;
+      background-position: fill;
+      background-repeat: repeat;
+      background-size: cover;
+      color: tomato;
+      border-bottom: 1px solid rgb(221, 14, 14);
+
+      background-color: #000000;
+      color: #fff;
+    }
+
+    /* Adding styles for card */
+    .card {
+      background-color: #0e0303;
+      color: #fff;
+      border-top: 1px #9b0000 solid;
+      border-bottom: 1px #9b0000 solid;
+    }
+
+    #contact {
+      position: bottom;
+      bottom: 0;
+      width: 100%;
+      background-color: #0e0303;
+      z-index: 10;
+      color: #fff;
+      border-top: 1px #9b0000 solid;
+      border-bottom: 1px #9b0000 solid;
+    }
+
+    .banner {
+      background-image: url("images/banner3.png");
+      background-color: black;
+      background-attachment: fixed;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+      color: tomato;
+      border-bottom: 1px solid rgb(221, 14, 14);
+    }
+
+    .btn-primary {
+      background-color: rgb(240, 40, 40);
+      border-color: #9b0000;
+      /* Adding white border to the button */
+    }
+
+    .custom-navbar {
+      background-color: #000000;
+      color: #680303;
+    }
+
+    #link {
+      color: #c60101;
+    }
+
+    .enlarged {
+      position: fixed;
+      z-index: 9999;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 80vh;
+      /* This will set the height to 80% of the viewport's height */
+      width: auto;
+      /* This will adjust the width to maintain the aspect ratio */
+    }
+
+
+    .faded {
+      opacity: 0.3;
+    }
+
+    .modal-content {
+        background-color: #f5f5f5;
+        border-radius: 15px;
+        border: none;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+    
+    .modal-header {
+        border-bottom: none;
+        justify-content: center;
+    }
+    
+    .modal-title {
+        color: #333;
+        font-size: 2em;
+        font-weight: 700;
+    }
+    
+    .modal-body {
+        color: #555;
+        font-size: 1.2em;
+    }
+    
+    .modal-footer {
+        border-top: none;
+        justify-content: center;
+    }
+    
+    .modal-footer .btn-primary {
+        color: #fff;
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+    
+    .modal-footer .btn-primary:hover {
+        color: #fff;
+        background-color: #0069d9;
+        border-color: #0062cc;
+    }
+    
+    .close {
+        color: #aaa;
+        text-shadow: none;
+        opacity: 0.8;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        opacity: 0.8;
+    }
+    
