@@ -76,56 +76,78 @@
     }
 
     .modal-content {
-        background-color: #000000;
-        border-radius: 15px;
-        border-top: 1px solid #9b0000;
-        border-bottom: 1px solid #9b0000;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+      background-color: #000000;
+      border-radius: 15px;
+      border-top: 1px solid #9b0000;
+      border-bottom: 1px solid #9b0000;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     }
-    
+
     .modal-header {
-        border-bottom: none;
-        justify-content: center;
+      border-bottom: none;
+      justify-content: center;
     }
-    
+
     .modal-title {
-        color: #910707;
-        font-size: 2em;
-        font-weight: 700;
+      color: #910707;
+      font-size: 2em;
+      font-weight: 700;
     }
-    
+
     .modal-body {
-        color: #a70b0b;
-        font-size: 1.2em;
+      color: #a70b0b;
+      font-size: 1.2em;
     }
-    
+
     .modal-footer {
-        border-top: none;
-        justify-content: center;
+      border-top: none;
+      justify-content: center;
     }
-    
+
     .modal-footer .btn-primary {
-        color: #fff;
-        background-color: rgb(240, 40, 40);
-        border-color: #9b0000;
+      color: #fff;
+      background-color: rgb(240, 40, 40);
+      border-color: #9b0000;
     }
-    
+
     .modal-footer .btn-primary:hover {
-        color: #fff;
-        background-color: #791501;
-        border-color: #cca700;
+      color: #fff;
+      background-color: #791501;
+      border-color: #cca700;
     }
-    
+
     .close {
-        color: #d30000;
-        text-shadow: none;
-        opacity: 0.8;
+      color: #d30000;
+      text-shadow: none;
+      opacity: 0.8;
     }
-    
+
     .close:hover,
     .close:focus {
-        color: #ec0a0a;
-        text-decoration: none;
-        opacity: 0.8;
+      color: #ec0a0a;
+      text-decoration: none;
+      opacity: 0.8;
     }
-    
+
+    /* For Google Chrome and Safari */
+    .modal-content::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    .modal-content::-webkit-scrollbar-track {
+      background: #000000;
+    }
+
+    .modal-content::-webkit-scrollbar-thumb {
+      background: #451111;
+    }
+
+    .modal-content::-webkit-scrollbar-thumb:hover {
+      background: #911313;
+    }
+
+    /* For Internet Explorer and Edge */
+    .modal-content {
+      scrollbar-width: thin;
+      scrollbar-color: #691717 #000000;
+    }
